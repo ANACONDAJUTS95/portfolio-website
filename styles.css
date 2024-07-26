@@ -122,6 +122,19 @@ body {
     z-index: 1;
 }
 
+.sticker-1 {
+    background-image: url("images/aesthetic 1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 47vw;
+    height: 10vh;
+    position: absolute;
+    left: 35vw;
+    top: 37%;
+    transform: translateY(-40%);
+    z-index: 1;
+}
+
 .text {
     letter-spacing: .5rem;
     font-size: .8rem;
