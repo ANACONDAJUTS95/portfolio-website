@@ -17,6 +17,7 @@ body {
 
 .nav {
     display: flex;
+    margin-left: 6vw;
     justify-content: start;
     padding-top: 2vh;
 }
@@ -73,11 +74,11 @@ body {
     background-image: url("images/Vector 1.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 40.5vw;
-    height: 70vh;
+    width: 48.1vw;
+    height: 78vh;
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 48%;
     transform: translateY(-40%);
     z-index: 0;
 }
@@ -86,12 +87,65 @@ body {
     background-image: url("images/Me.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 47vw;
-    height: 110vh;
+    width: 55vw;
+    height: 120vh;
     position: absolute;
     right: 0;
     top: 55%;
     transform: translateY(-40%);
+    /* clip-path: inset(0 0 25% 0); */
+    z-index: 1;
+}
+
+.me-img::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 600px; /* Height of the gradient */
+    background: linear-gradient(to top, rgba(19, 18, 23, 1) 45%, rgba(19, 18, 23, 0) 100%);
+    z-index: 2; /* Ensure it overlays on top of the image */
+}
+
+.name-txt {
+    background-image: url("images/Logo-cropped.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 47vw;
+    height: 110vh;
+    position: absolute;
+    left: 10vw;
+    top: 75%;
+    transform: translateY(-40%);
     clip-path: inset(0 0 25% 0);
     z-index: 1;
+}
+
+.text {
+    letter-spacing: .5rem;
+    font-size: .8rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 11vw;
+    top: 64%;
+    transform: translateY(-40%);
+    color: #FFFFFF;
+    z-index: 3
+}
+
+.dot {
+    font-weight: 900;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #FFC745;
+}
+
+.er:hover {
+    cursor: pointer;
+    font-weight: 900;
+    color: #FFC745;
+    transition: all .3s ease;
 }
