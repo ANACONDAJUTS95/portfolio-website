@@ -31,6 +31,7 @@ body {
 .nav-row li {
     margin-right: 5vw;
     color: #FFFFFF;
+    transition: all .3s ease;
 }
 
 .nav-row li:hover {
@@ -48,4 +49,49 @@ body {
 
 .me-page {
     margin-top: 1vh;
+}
+
+.bg-design {
+    margin-left: -5vw;
+    background: 
+                linear-gradient(to bottom, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) top,
+                linear-gradient(to top, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) bottom,
+                linear-gradient(to right, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) left,
+                linear-gradient(to left, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) right,
+                url("images/background.png"),
+                url("images/Topo.png");
+    background-size: 100% 100px, 100% 100px, 100px 100%, 100px 100%, cover, cover;
+    background-repeat: no-repeat;
+    background-position: top, bottom, left, right, center, center;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 3%;
+}
+
+.vector-1 {
+    background-image: url("images/Vector 1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40.5vw;
+    height: 70vh;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-40%);
+    z-index: 0;
+}
+
+.me-img {
+    background-image: url("images/Me.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 47vw;
+    height: 110vh;
+    position: absolute;
+    right: 0;
+    top: 55%;
+    transform: translateY(-40%);
+    clip-path: inset(0 0 25% 0);
+    z-index: 1;
 }
