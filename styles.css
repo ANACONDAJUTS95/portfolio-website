@@ -167,7 +167,6 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 12vh;
-    height: 100vh;
 }
 
 .a-img {
@@ -229,7 +228,6 @@ body {
     background: linear-gradient(to top, rgba(19, 18, 23, 1) 15%, rgba(19, 18, 23, 0) 100%);
     pointer-events: none; /* Ensures the gradient doesn't interfere with user interactions */
 }
-
 
 .about-img {
     width: 30vw;
