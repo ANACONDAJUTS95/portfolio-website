@@ -52,8 +52,7 @@ body {
 
 .bg-design {
     margin-left: -5vw;
-    background: 
-                linear-gradient(to bottom, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) top,
+    background: linear-gradient(to bottom, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) top,
                 linear-gradient(to top, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) bottom,
                 linear-gradient(to right, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) left,
                 linear-gradient(to left, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) right,
@@ -168,7 +167,16 @@ body {
 }
 
 .work {
-    margin-top: 22vh;
+    margin-top: 25vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background: 
+                linear-gradient(to bottom, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) top,
+                linear-gradient(to top, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) bottom,
+                linear-gradient(to right, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) left,
+                linear-gradient(to left, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) right,
+                url("images/background.png");
+    background-size: cover;
 }
 
 .a-img,
@@ -280,4 +288,19 @@ body {
     margin-left: 25vw;
     margin-right: 25vw;
     padding-top: 5vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 10vh 11vw;
+    justify-content: center; 
+}
+
+.container {
+    background-color: red;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 10px;
+    margin-right: 5vw;
 }
