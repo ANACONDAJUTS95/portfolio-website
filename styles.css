@@ -6,6 +6,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #131217;
 }
@@ -29,24 +33,18 @@ body {
     margin: 0;
 }
 
-.nav-row li {
+.nav-row a {
+    text-decoration: none;
     margin-right: 5vw;
     color: #FFFFFF;
     transition: all .3s ease;
 }
 
-.nav-row li:hover {
-    cursor: pointer;
-    font-weight: 800;
-    color: #FFC745;
-}
-
-.nav-row a {
+.nav-row a:hover {
     text-decoration: none;
     color: #FFC745;
     font-weight: 800;
 }
-
 
 .me-page {
     margin-top: 1vh;
@@ -169,7 +167,12 @@ body {
     margin-top: 12vh;
 }
 
-.a-img {
+.work {
+    margin-top: 22vh;
+}
+
+.a-img,
+.w-img {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -229,8 +232,35 @@ body {
     pointer-events: none; /* Ensures the gradient doesn't interfere with user interactions */
 }
 
-.about-img {
+.about-img,
+.work-img{
     width: 30vw;
+}
+
+.work,
+.w-img,
+.iron-man {
+    position: relative;
+}
+
+.head {
+    position: absolute;
+    top: -18vh; /* Adjust as needed */
+    left: 10vw; /* Adjust as needed */
+    z-index: 1; /* Behind work-img */
+    transform: rotate(10deg);
+}
+
+.hands {
+    position: absolute;
+    top: -3.5vh; /* Adjust as needed */
+    left: 10vw; /* Adjust as needed */
+    z-index: 3; /* In front of work-img */
+}
+
+.work-img {
+    position: relative;
+    z-index: 2;
 }
 
 .a-txt {
