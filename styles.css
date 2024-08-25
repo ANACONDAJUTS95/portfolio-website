@@ -6,12 +6,23 @@
     font-family: "Roboto", sans-serif;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     background-color: #131217;
+}
+
+html, body {
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .margins {
@@ -52,8 +63,7 @@ body {
 
 .bg-design {
     margin-left: -5vw;
-    background: 
-                linear-gradient(to bottom, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) top,
+    background: linear-gradient(to bottom, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) top,
                 linear-gradient(to top, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) bottom,
                 linear-gradient(to right, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) left,
                 linear-gradient(to left, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) right,
@@ -101,9 +111,9 @@ body {
     left: 0;
     bottom: 18vh;
     width: 100%;
-    height: 300px; /* Height of the gradient */
+    height: 300px; 
     background: linear-gradient(to top, rgba(19, 18, 23, 1) 45%, rgba(19, 18, 23, 0) 100%);
-    z-index: 2; /* Ensure it overlays on top of the image */
+    z-index: 2; 
 }
 
 .name-txt {
@@ -168,7 +178,16 @@ body {
 }
 
 .work {
-    margin-top: 22vh;
+    margin-top: 25vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background: 
+                linear-gradient(to bottom, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) top,
+                linear-gradient(to top, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) bottom,
+                linear-gradient(to right, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) left,
+                linear-gradient(to left, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%) right,
+                url("images/background.png");
+    background-size: cover;
 }
 
 .a-img,
@@ -196,14 +215,14 @@ body {
     top: 8vh;
     left: 0;
     width: 100%;
-    height: 50vh; /* Height of the gradient */
+    height: 50vh; 
     background: linear-gradient(to bottom, rgba(19, 18, 23, 1) 25%, rgba(19, 18, 23, 0) 100%) top;
-    pointer-events: none; /* Ensures the gradient doesn't interfere with user interactions */
+    pointer-events: none; 
 }
 
 .topo-2 img {
-    width: 100%; /* Adjust the image width to fit the container */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100%;
+    height: auto;
 }
 
 .topo-1 {
@@ -224,12 +243,12 @@ body {
     transform: rotate(-90deg);
     content: '';
     position: absolute;
-    bottom: 50vh; /* Positioning at the bottom */
+    bottom: 50vh; 
     left: -10vw;
     width: 100%;
-    height: 25vh; /* Height of the gradient */
+    height: 25vh; 
     background: linear-gradient(to top, rgba(19, 18, 23, 1) 15%, rgba(19, 18, 23, 0) 100%);
-    pointer-events: none; /* Ensures the gradient doesn't interfere with user interactions */
+    pointer-events: none; 
 }
 
 .about-img,
@@ -245,17 +264,17 @@ body {
 
 .head {
     position: absolute;
-    top: -18vh; /* Adjust as needed */
-    left: 10vw; /* Adjust as needed */
-    z-index: 1; /* Behind work-img */
+    top: -18vh; 
+    left: 10vw; 
+    z-index: 1; 
     transform: rotate(10deg);
 }
 
 .hands {
     position: absolute;
-    top: -3.5vh; /* Adjust as needed */
-    left: 10vw; /* Adjust as needed */
-    z-index: 3; /* In front of work-img */
+    top: -3.5vh; 
+    left: 10vw; 
+    z-index: 3; 
 }
 
 .work-img {
@@ -280,4 +299,19 @@ body {
     margin-left: 25vw;
     margin-right: 25vw;
     padding-top: 5vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 10vh 11vw;
+    justify-content: center; 
+}
+
+.container {
+    background-color: red;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 10px;
+    margin-right: 5vw;
 }
