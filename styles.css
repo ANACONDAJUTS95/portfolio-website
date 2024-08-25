@@ -369,3 +369,71 @@ html, body {
 .container:hover .proj-text {
     opacity: 1; 
 }
+
+.overlay {
+    width: 80rem;
+    padding: 3vh;
+    height: 40rem;
+    background: rgba(69, 69, 69, 0.8); /* Changed from red for better readability */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    display: none; /* Hidden initially */
+    overflow-y: auto;
+}
+
+.overlay-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: none; /* Hidden initially */
+}
+
+.proj-title {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.proj-details {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-left: 0.5%;
+    white-space: pre-line; /* Preserve line breaks in the text */
+}
+
+.btn {
+    position: fixed;
+    cursor: pointer;
+    margin-top: 5vh;
+    margin-left: 0.5vw;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    background: #FFC745;
+    color: #131217;
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    scale: 110%;
+    font-weight: 900;
+}
+
+
+

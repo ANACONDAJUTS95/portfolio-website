@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ace Sepacio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <!-- NAVBAR -->
@@ -87,7 +86,9 @@
         </div>
 
         <div class="row">
-            <div class="container">
+            <div class="container" data-title="Random Marvel Quote Generator" 
+            data-overview="This project is a FreeCodeCamp Project that I completed as part of the curriculum. I modified the original project to feature nostalgic quotes from Marvel movies, spanning from the past to the present." 
+            data-features="- Randomly generates quotes from various Marvel movies.\n- Each quote includes the character who said it and the movie it is from.\n- Simple and intuitive user interface.\n- Responsive design for mobile and desktop use.">
                 <img class="proj-img" src="images/Project Images/Proj-1.png" alt="Proj-1">
                 <div class="proj-text">Random Quote Generator</div>
             </div>
@@ -113,5 +114,15 @@
             <!-- <div class="container">box</div> -->
         </div>
     </div>
+
+    <!-- OVERLAYS -->
+    <div id="overlay" class="overlay">
+        <div class="proj-title">Title Here</div>
+        <div class="proj-details">Some Details Here</div>
+        <div class="btn">See Project</div>
+    </div>
+     <div class="overlay-background"></div>
+
+     <script src="script.js"></script>
 </body>
 </html>
