@@ -84,3 +84,55 @@ document.querySelector('.overlay-background').addEventListener('click', function
         overlayBackground.style.display = 'none';
     }, 300);
 });
+
+document.getElementById('certificate-1').addEventListener('click', function() {
+    window.open('https://www.coursera.org/account/accomplishments/professional-cert/3E5L145PGFBV', '_blank');
+});
+
+document.getElementById('certificate-2').addEventListener('click', function() {
+    window.open('https://www.coursera.org/account/accomplishments/specialization/XNEF24VJKEPW', '_blank');
+});
+
+document.getElementById('certificate-3').addEventListener('click', function() {
+    window.open('https://www.coursera.org/account/accomplishments/verify/KA455B6NZ9EO', '_blank');
+});
+
+document.getElementById('certificate-4').addEventListener('click', function() {
+    window.open('https://coursera.org/share/f58031e2ab182576bfc964d9cb7b7802', '_blank');
+});
+
+document.getElementById('certificate-5').addEventListener('click', function() {
+    window.open('https://www.freecodecamp.org/certification/fcc98b5c3f4-e26b-49b7-80d9-bd98e052bdbb/front-end-development-libraries', '_blank');
+});
+
+document.getElementById('certificate-6').addEventListener('click', function() {
+    window.open('https://www.freecodecamp.org/certification/fcc98b5c3f4-e26b-49b7-80d9-bd98e052bdbb/responsive-web-design', '_blank');
+});
+
+// Function to clear inputs when "Cancel" is clicked
+document.getElementById('cancel-btn').addEventListener('click', function() {
+    document.getElementById('email').value = ''; // Clear the email input
+    document.getElementById('textarea').value = ''; // Clear the textarea
+});
+
+// Function to submit the email and message
+document.getElementById('submit-btn').addEventListener('click', function() {
+    const email = document.getElementById('email').value; // Get the email input
+    const message = document.getElementById('textarea').value; // Get the textarea input
+
+    if (email === '' || message === '') {
+        alert('Please fill out both the email and message fields.');
+        return; // Prevent submission if fields are empty
+    }
+
+    // This code simulates sending an email
+    // In a real-world scenario, you would need a server to handle the email sending
+    const mailtoLink = `mailto:acesepacio@gmail.com?subject=Message from ${email}&body=${encodeURIComponent(message)}`;
+    window.location.href = mailtoLink; // Open the mail client with the provided details
+
+    // Clear inputs after submission
+    document.getElementById('email').value = '';
+    document.getElementById('textarea').value = '';
+});
+
+
