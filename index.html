@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ace Sepacio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <!-- NAVBAR -->
@@ -87,16 +86,46 @@
         </div>
 
         <div class="row">
-            <div class="container">box</div>
-            <div class="container">box</div>
-            <div class="container">box</div>
+            <div id="container-1" class="container">
+                <img class="proj-img" src="images/Project Images/Proj-1.png" alt="Proj-1">
+                <div class="proj-text">Random Quote Generator</div>
+            </div>
+            <div id="container-2" class="container">
+                <img class="proj-img" src="images/Project Images/Proj-2.png" alt="Proj-2">
+                <div class="proj-text">Markdown Previewer</div>
+            </div>
+            <div id="container-3" class="container">
+                <img class="proj-img" src="images/Project Images/Proj-3.png" alt="Proj-3">
+                <div class="proj-text">Drum Machine</div>
+            </div>
         </div>
 
         <div class="row">
-            <div class="container">box</div>
-            <div class="container">box</div>
-            <div class="container">box</div>
+            <div id="container-4" class="container">
+                <img class="proj-img" src="images/Project Images/Proj-4.png" alt="Proj-4">
+                <div class="proj-text">JavaScript Calculator</div>
+            </div>
+            <div id="container-5" class="container">
+                <img class="proj-img" src="images/Project Images/Proj-5.png" alt="Proj-5">
+                <div class="proj-text">25 + 5 Clock</div>
+            </div>
+            <!-- <div class="container">box</div> -->
         </div>
     </div>
+
+    <!-- OVERLAYS -->
+    <div id="overlay" class="overlay">
+        <div id="title" class="proj-title">Title Here</div>
+        <div class="proj-details">
+            <div id="overview" class="overview">Overview</div>
+            <div id="o-desc" class="overview-desc">Text</div>
+            <div id="features" class="features">Features</div>
+            <div id="f-desc" class="feature-desc">Features</div>
+        </div>
+        <div id="link-button" class="btn">See Project</div>
+    </div>
+    <div class="overlay-background"></div>
+
+     <script src="script.js"></script>
 </body>
 </html>
