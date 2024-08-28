@@ -109,3 +109,30 @@ document.getElementById('certificate-6').addEventListener('click', function() {
     window.open('https://www.freecodecamp.org/certification/fcc98b5c3f4-e26b-49b7-80d9-bd98e052bdbb/responsive-web-design', '_blank');
 });
 
+// Function to clear inputs when "Cancel" is clicked
+document.getElementById('cancel-btn').addEventListener('click', function() {
+    document.getElementById('email').value = ''; // Clear the email input
+    document.getElementById('textarea').value = ''; // Clear the textarea
+});
+
+// Function to submit the email and message
+document.getElementById('submit-btn').addEventListener('click', function() {
+    const email = document.getElementById('email').value; // Get the email input
+    const message = document.getElementById('textarea').value; // Get the textarea input
+
+    if (email === '' || message === '') {
+        alert('Please fill out both the email and message fields.');
+        return; // Prevent submission if fields are empty
+    }
+
+    // This code simulates sending an email
+    // In a real-world scenario, you would need a server to handle the email sending
+    const mailtoLink = `mailto:acesepacio@gmail.com?subject=Message from ${email}&body=${encodeURIComponent(message)}`;
+    window.location.href = mailtoLink; // Open the mail client with the provided details
+
+    // Clear inputs after submission
+    document.getElementById('email').value = '';
+    document.getElementById('textarea').value = '';
+});
+
+
