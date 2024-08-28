@@ -371,19 +371,26 @@ html, body {
 }
 
 .overlay {
-    width: 80rem;
+    width: 65rem;
     padding: 3vh;
-    height: 40rem;
-    background: rgba(69, 69, 69, 0.8); /* Changed from red for better readability */
+    height: 31rem;
+    background: rgba(90, 90, 90, 0.2); /* Semi-transparent background for glassmorphism */
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1001;
+    transform: translate(-50%, -50%) scale(0.9); /* Initial scale for transition */
+    backdrop-filter: blur(15px); /* The blur effect for glassmorphism */
+    -webkit-backdrop-filter: blur(15px); /* Ensures compatibility with older webkit browsers */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Slight border to enhance glassmorphism */
+    z-index: 6;
     display: none; /* Hidden initially */
     overflow-y: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth opening/closing transition */
+    opacity: 0; /* Initial opacity for fade-in effect */
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .overlay-background {
@@ -393,8 +400,33 @@ html, body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
+    z-index: 5;
     display: none; /* Hidden initially */
+    transition: opacity 0.3s ease; /* Smooth fade effect */
+}
+
+.overlay.show {
+    transform: translate(-50%, -50%) scale(1); /* Reset scale on show */
+    opacity: 1; /* Fade in on show */
+    display: block; /* Ensure it's displayed */
+}
+
+.overlay-background.show {
+    display: block; /* Ensure background is displayed */
+    opacity: 1; /* Fade in the background */
+}
+
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: -5px; /* Adjust for gradient border */
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+    border-radius: 25px; /* Slightly larger border-radius to create the effect */
+    pointer-events: none; /* Ensure it doesn’t interfere with content */
+    z-index: -1; /* Make sure it’s behind the overlay content */
 }
 
 .proj-title {
@@ -436,7 +468,7 @@ li h4 {
 .btn {
     position: fixed;
     cursor: pointer;
-    margin-top: 5vh;
+    margin-top: 1vh;
     margin-left: 0.5vw;
     width: fit-content;
     padding: 1rem;
