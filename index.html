@@ -86,28 +86,26 @@
         </div>
 
         <div class="row">
-            <div class="container" data-title="Random Marvel Quote Generator" 
-            data-overview="This project is a FreeCodeCamp Project that I completed as part of the curriculum. I modified the original project to feature nostalgic quotes from Marvel movies, spanning from the past to the present." 
-            data-features="- Randomly generates quotes from various Marvel movies.\n- Each quote includes the character who said it and the movie it is from.\n- Simple and intuitive user interface.\n- Responsive design for mobile and desktop use.">
+            <div id="container-1" class="container">
                 <img class="proj-img" src="images/Project Images/Proj-1.png" alt="Proj-1">
                 <div class="proj-text">Random Quote Generator</div>
             </div>
-            <div class="container">
+            <div id="container-2" class="container">
                 <img class="proj-img" src="images/Project Images/Proj-2.png" alt="Proj-2">
                 <div class="proj-text">Markdown Previewer</div>
             </div>
-            <div class="container">
+            <div id="container-3" class="container">
                 <img class="proj-img" src="images/Project Images/Proj-3.png" alt="Proj-3">
                 <div class="proj-text">Drum Machine</div>
             </div>
         </div>
 
         <div class="row">
-            <div class="container">
+            <div id="container-4" class="container">
                 <img class="proj-img" src="images/Project Images/Proj-4.png" alt="Proj-4">
                 <div class="proj-text">JavaScript Calculator</div>
             </div>
-            <div class="container">
+            <div id="container-5" class="container">
                 <img class="proj-img" src="images/Project Images/Proj-5.png" alt="Proj-5">
                 <div class="proj-text">25 + 5 Clock</div>
             </div>
@@ -117,11 +115,16 @@
 
     <!-- OVERLAYS -->
     <div id="overlay" class="overlay">
-        <div class="proj-title">Title Here</div>
-        <div class="proj-details">Some Details Here</div>
-        <div class="btn">See Project</div>
+        <div id="title" class="proj-title">Title Here</div>
+        <div class="proj-details">
+            <div id="overview" class="overview">Overview</div>
+            <div id="o-desc" class="overview-desc">Text</div>
+            <div id="features" class="features">Features</div>
+            <div id="f-desc" class="feature-desc">Features</div>
+        </div>
+        <div id="link-button" class="btn">See Project</div>
     </div>
-     <div class="overlay-background"></div>
+    <div class="overlay-background"></div>
 
      <script src="script.js"></script>
 </body>
