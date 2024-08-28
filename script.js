@@ -84,3 +84,28 @@ document.querySelector('.overlay-background').addEventListener('click', function
         overlayBackground.style.display = 'none';
     }, 300);
 });
+
+document.getElementById('certificate-1').addEventListener('click', function() {
+    window.open('https://www.coursera.org/account/accomplishments/professional-cert/3E5L145PGFBV', '_blank');
+});
+
+document.getElementById('certificate-2').addEventListener('click', function() {
+    window.open('https://www.coursera.org/account/accomplishments/specialization/XNEF24VJKEPW', '_blank');
+});
+
+document.getElementById('certificate-3').addEventListener('click', function() {
+    window.open('https://www.coursera.org/account/accomplishments/verify/KA455B6NZ9EO', '_blank');
+});
+
+document.getElementById('certificate-4').addEventListener('click', function() {
+    window.open('https://coursera.org/share/f58031e2ab182576bfc964d9cb7b7802', '_blank');
+});
+
+document.getElementById('certificate-5').addEventListener('click', function() {
+    window.open('https://www.freecodecamp.org/certification/fcc98b5c3f4-e26b-49b7-80d9-bd98e052bdbb/front-end-development-libraries', '_blank');
+});
+
+document.getElementById('certificate-6').addEventListener('click', function() {
+    window.open('https://www.freecodecamp.org/certification/fcc98b5c3f4-e26b-49b7-80d9-bd98e052bdbb/responsive-web-design', '_blank');
+});
+

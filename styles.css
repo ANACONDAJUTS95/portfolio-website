@@ -308,7 +308,7 @@ html, body {
     justify-content: center; 
 }
 
-.container {
+.container, .certificate {
     cursor: pointer;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
@@ -320,7 +320,8 @@ html, body {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.container::before {
+.container::before, 
+.certificate::before {
     content: '';
     position: absolute;
     top: 0;
@@ -358,15 +359,18 @@ html, body {
     z-index: 2; 
 }
 
-.container:hover {
+.container:hover,
+.certificate:hover {
     transform: scale(1.1); 
 }
 
-.container:hover::before {
+.container:hover::before, 
+.certificate:hover::before {
     opacity: 1; 
 }
 
-.container:hover .proj-text {
+.container:hover .proj-text,
+.certificate:hover .proj-text {
     opacity: 1; 
 }
 
