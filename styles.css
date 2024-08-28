@@ -427,6 +427,12 @@ html, body {
     margin-left: 2.2%;
 }
 
+li h4 {
+    display: inline-block;
+    margin: 0;
+}
+  
+
 .btn {
     position: fixed;
     cursor: pointer;

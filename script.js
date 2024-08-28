@@ -26,18 +26,17 @@ function openOverlay(containerId) {
         case 'container-2':
             projTitle.textContent = "Markdown Previewer";
             overview.textContent = "Overview";
-            overviewDesc.textContent = "This is another FreeCodeCamp project. It allows users to type Markdown and see a live preview of how it will render.";
-            features.textContent = "Features";
-            featureDesc.innerHTML = "<ul><li>Live preview of Markdown.</li><li>Responsive design.</li><li>Supports most common Markdown syntax.</li></ul>";
-            linkButton.setAttribute('onclick', "window.open('https://github.com/YourGitHubRepo/Project2', '_blank')");
+            overviewDesc.textContent = "This is a Markdown Previewer project, originally inspired by FreeCodeCamp. The goal of this project is to create a simple, responsive interface where users can input Markdown and see a live preview of how it will render in HTML";
+            featureDesc.innerHTML = "<ul><li><h4>Real-time Markdown Rendering:</h4> The preview updates automatically as you type.</li><li><h4>Simple and Clean UI:</h4> The layout is designed to be minimalistic, focusing on usability and readability.</li><li><h4>Basic Markdown Support:</h4> Supports headers, lists, links, text decorations, images, blockquotes, code, and code blocks.</li>";
+            linkButton.setAttribute('onclick', "window.open('https://anacondajuts95.github.io/Markdown-Previewer/', '_blank')");
             break;
         case 'container-3':
             projTitle.textContent = "Drum Machine";
             overview.textContent = "Overview";
-            overviewDesc.textContent = "This project is a simple drum machine app built with React.";
+            overviewDesc.textContent = "This project is a Drum Machine built as part of the FreeCodeCamp curriculum. It was a fun and challenging project that allowed me to explore the interaction between HTML, CSS, and JavaScript. As someone with a background as a DJ/Producer, working on this Drum Machine was particularly enjoyable. It brought back memories of creating beats and experimenting with sounds, and I had a blast figuring out how to replicate some of that experience through code.";
             features.textContent = "Features";
-            featureDesc.innerHTML = "<ul><li>Interactive drum pads.</li><li>Responsive design.</li><li>Customizable sound effects.</li></ul>";
-            linkButton.setAttribute('onclick', "window.open('https://github.com/YourGitHubRepo/Project3', '_blank')");
+            featureDesc.innerHTML = "<ul><li><h4>Responsive Design:</h4> The Drum Machine is designed to work well on different screen sizes.</li><li><h4>Interactive UI:</h4> Users can click the drum pads or press the corresponding keys on their keyboard to play sounds.</li><li><h4>Real-Time Feedback:</h4> The display updates in real-time to show the name of the sound being played.</li><li><h4>Custom Styles:</h4> The project features custom styling using CSS to create a polished, professional look.</li></ul>";
+            linkButton.setAttribute('onclick', "window.open('https://anacondajuts95.github.io/Drum-Machine/', '_blank')");
             break;
         case 'container-4':
             projTitle.textContent = "JavaScript Calculator";
