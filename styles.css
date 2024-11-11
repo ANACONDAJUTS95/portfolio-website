@@ -564,7 +564,7 @@ li h4 {
     flex-direction: column;
     align-items: center; /* Center the container horizontally */
     justify-content: center; /* Center the container vertically */
-    height: 100vh; /* Make sure the contact section takes full height of the viewport */
+    height: 55vh; /* Make sure the contact section takes full height of the viewport */
     background: linear-gradient(135deg, rgba(19, 18, 23, 1) 0%, rgba(19, 18, 23, 0) 100%);
 }
 
@@ -680,7 +680,7 @@ li h4 {
 .socials-txt {
     color: #FFC745;
     font-size: 14px;
-    margin-bottom: 2rem; 
+    margin-bottom: 3rem; 
 }
 
 .socmed {
@@ -994,11 +994,6 @@ li h4 {
         position: absolute;
         margin-left: 14vw;
         margin-top: 2vh;
-    }
-
-    .contact {
-        margin-top: -25vh;
-        margin-bottom: -20vh;
     }
 
     .cont-img {
