@@ -736,10 +736,9 @@ li h4 {
     
     .text {
         position: relative;
-        width: 90%;
-        max-width: 12rem; /* Adjust max-width as needed */
+        max-width: 18rem; /* Adjust max-width as needed */
         height: 2.5rem; /* Height to fit one line of text */
-        margin: -60vh auto 0 18vw; /* Center the container */
+        margin: -60vh auto -10vh auto; /* Center the container */
         border-radius: 50px;
         background-color: #FFC745;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
@@ -802,7 +801,7 @@ li h4 {
     
 }
 
-@media (min-width: 800px) and (max-width:1080px) {
+@media (min-width: 400px) and (max-width:800px) {
     .nav {
         display: none;
     }
@@ -813,33 +812,35 @@ li h4 {
     }
 
     .vector-1 {
+        margin-top: 10vh;
         margin-right: 25vw;
         z-index: -2;
+        scale: 120%;
     }
 
     .me-img {
-        width: 80%;
+        margin-top: -1vh;
+        width: 100%;
         z-index: -1;
-        margin-right: 10vw;
-        clip-path: inset(0 0 73% 0);
+        margin-right: -3vw;
+        clip-path: inset(0 0 68% 0);
     }
 
     .sticker-1 {
-        margin-top: -11.5vh;
-        margin-left: 5%;
-        scale: 45%;
+        margin-top: -10vh;
+        margin-left: 7vw;
+        scale: 60%;
     }
 
     .dot, .topo-1, .topo-2 {
         display: none;
     }
-
+    
     .text {
         position: relative;
-        width: 90%;
-        max-width: 50rem; /* Adjust max-width as needed */
-        height: 4rem; /* Height to fit one line of text */
-        margin: -63vh auto 0 10vw; /* Center the container */
+        max-width: 18rem; /* Adjust max-width as needed */
+        height: 2.5rem; /* Height to fit one line of text */
+        margin: -60vh auto -10vh auto; /* Center the container */
         border-radius: 50px;
         background-color: #FFC745;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
@@ -850,23 +851,23 @@ li h4 {
     }
     
     .animated-text {
-        margin-top: 2vh;
+        margin-top: 7vh;
         margin-left: -20vw;
         display: flex;
         flex-direction: column;
-        height: 12.5rem; /* 3 times the height to fit all texts vertically */
+        height: 10.8rem; /* 3 times the height to fit all texts vertically */
         justify-content: space-around;
         position: relative;
         animation: slideText 9s infinite; /* 3 seconds per text, 9 seconds total for one full cycle */
     }
     
     .er {
-        letter-spacing: 0.5rem;
+        letter-spacing: 0.15rem;
         color: #131217;
         font-weight: 300;
-        font-size: 2rem;
+        font-size: 0.65rem;
         text-align: center;
-        line-height: 4rem; /* Center text vertically */
+        line-height: 2.5rem; /* Center text vertically */
     }
     
     @keyframes slideText {
@@ -886,151 +887,100 @@ li h4 {
     
 
     .about {
-        margin-top: 20vh;
+        margin-top: 15vh;
         margin-bottom: -5vh;
     }
 
-    .a-img,
-    .work-img {
+    .a-img {
         scale: 180%;
+        margin: 5vh 0 5vh 0;
     }
 
 
     .txt-containter {
-        font-size: 1.5rem;
-        margin: -3vh 10vw 1vh 10vw;
+        font-size: 1rem;
+        margin: -5vh 10vw 1vh 10vw;
     }
 
     .p2 {
-        margin-top: -4vh;
+        margin-top: -3vh;
     }
 
     .work {
-        margin-top: 20vh;
+        top: -5vh;
+    }
+
+    .work-img {
+        scale: 180%;
+    }
+
+    .head,
+    .hands {
+        left: -10vw;
+        scale: 70%;
     }
 
     .head {
-        scale: 120%;
-        margin-top: 11.5vh;
+        top: -16vh;
     }
 
     .hands {
-        scale: 120%;
-        margin-top: 1.5vh;
+        top: -5vh;
+    }
+    
+    .certificates {
+        margin-top: -10vh;
     }
 
-    .row {
-        margin-top: 4vh;
-    }
-
-    .overlay {
-        margin-top: -35vh;
-        margin-left: -38vw;
-        width: 40%;
-    }
-
-    .proj-title {
-        font-size: 1.5rem;
-        margin-left: -1vh;
-    }
-
-    .overview {
-        margin-top: -1vh;
-        margin-left: -1vh;
-    }
-
-    .overview, .features {
-        font-size: 1rem;
-        margin-left: -1vh;
-    }
-
-    .overview-desc, .feature-desc {
-        font-size: 0.8rem;
-    }
-
-    .btn {
-        scale: 80%;
-        margin-left: -2rem;
-        margin-top: 0;
+    .cert-content {
+        margin-top: -2vh;
     }
 
     .cert-img {
         scale: 150%;
+        /* display: none; */
     }
 
     .sparkles-1 {
-        position: absolute;
-        margin-top: -0.8vh;
+        left: -14vw;
+        margin-top: -0.5vh;
     }
 
     .sparkles-2 {
-        position: absolute;
-        margin-top: -0.8vh;
+        left: 14vw;
+        margin-top: -0.5vh;
     }
 
-    .sparkle-1, .sparkle-2 {
-        position: absolute;
-        margin-top: 0.5vh;
-        margin-left: -12.5vw;
-    }
-
-    .sparkle-3 {
-        position: absolute;
-        margin-left: -12.5vw;
-        margin-top: 2vh;
-    }
-
-    .sparkle-4, .sparkle-5 {
-        position: absolute;
-        margin-top: 0.5vh;
-        margin-left: 12vw;
-    }
-
-    .sparkle-5 {
-        margin-left: 14vw;
-    }
-
+    .sparkle-1,
+    .sparkle-2, 
+    .sparkle-3, 
+    .sparkle-4,
+    .sparkle-5,
     .sparkle-6 {
-        position: absolute;
-        margin-left: 14vw;
-        margin-top: 2vh;
+        scale: 200%;
+    }
+
+    .sparkle-3,
+    .sparkle-6 {
+        top: -4vh;
+    }
+
+    .contact {
+        margin-top: -25vh;
     }
 
     .cont-img {
-        scale: 180%;
+        scale: 220%;
     }
 
-    .contact-box {
-        width: 100vw;
-        height: 20vh;
-    }
-
-    .email, .message {
-        width: 50vw;
-        margin-left: -10vw;
-    }
-
-    .email-add {
-        width: 61vw;
-    }
-
-    .mess-area {
-        height: 6vh;
-        width: 61vw;
-    }
-
-    .buttons {
-        margin-top: 2vh;
-        width: 80%;
-    }
-
-    .socials {
-        margin-top: -35vh;
+    .socials-txt {
+        margin-top: -22vh;
+        width: 100%;
+        font-size: 0.9rem;
     }
 
     .socmed {
-        margin-top: 2vh;
-        scale: 120%;
+        margin-top: 5vh;
     }
     
 }
