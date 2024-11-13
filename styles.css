@@ -798,6 +798,14 @@ li h4 {
     .p2 {
         margin-top: -3vh;
     }
+
+    .sparkles-1 {
+        display: none;
+    }
+
+    .sparkles-2 {
+        display: none;
+    }
     
 }
 
@@ -908,6 +916,8 @@ li h4 {
 
     .work {
         top: -5vh;
+        box-sizing: border-box;
+        background-size: cover;
     }
 
     .work-img {
@@ -938,31 +948,14 @@ li h4 {
 
     .cert-img {
         scale: 150%;
-        /* display: none; */
     }
 
     .sparkles-1 {
-        left: -14vw;
-        margin-top: -0.5vh;
+        display: none;
     }
 
     .sparkles-2 {
-        left: 14vw;
-        margin-top: -0.5vh;
-    }
-
-    .sparkle-1,
-    .sparkle-2, 
-    .sparkle-3, 
-    .sparkle-4,
-    .sparkle-5,
-    .sparkle-6 {
-        scale: 200%;
-    }
-
-    .sparkle-3,
-    .sparkle-6 {
-        top: -4vh;
+        display: none;
     }
 
     .contact {
